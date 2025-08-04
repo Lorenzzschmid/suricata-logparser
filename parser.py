@@ -9,6 +9,6 @@ def load_alerts(filepath):
             try: 
                 event = json.loads(line)
                 if event.get('event_type') == 'alert':
-                    alerts.appen(event)
+                    alerts.append(event)
                         continue
     return alerts
